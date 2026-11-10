@@ -8,7 +8,7 @@ header:
       val: 1
 timers:
   0:
-    swtch: SF0
+    swtch: SF2
     mode: THR_START
     name: FLIGHT
     minuteBeep: 0
@@ -112,7 +112,7 @@ mixData:
     name: ""
   - destCh: 4
     srcRaw: SF
-    weight: -100
+    weight: 100
     swtch: NONE
     curve:
       type: 0
@@ -231,11 +231,11 @@ inputNames:
     val: Rud
 customFn:
   0:
-    swtch: SF0
+    swtch: SF2
     func: PLAY_TRACK
     def: "armed\x00\x00\x00,1,!1x"
   1:
-    swtch: SF2
+    swtch: SF0
     func: PLAY_TRACK
     def: "disarm\x00\x00,1,!1x"
   2:
@@ -251,7 +251,7 @@ customFn:
     func: PLAY_TRACK
     def: "acro\x00\x00\x00\x00,1,!1x"
   5:
-    swtch: SF0
+    swtch: SF2
     func: DISABLE_TOUCH
     def: 1
 swashR:
