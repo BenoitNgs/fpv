@@ -9,7 +9,7 @@ header:
 timers: 
    0:
       start: 0
-      swtch: "SF0"
+      swtch: "SF2"
       value: 0
       mode: THR_START
       countdownBeep: 0
@@ -114,7 +114,7 @@ mixData:
    delayPrec: 0
    speedPrec: 0
    flightModes: 000000000
-   weight: -100
+   weight: 100
    offset: 0
    swtch: "NONE"
    delayUp: 0
@@ -203,11 +203,11 @@ expoData:
    name: ""
 customFn: 
    0:
-      swtch: "SF0"
+      swtch: "SF2"
       func: PLAY_TRACK
       def: "armed,1,!1x"
    1:
-      swtch: "SF2"
+      swtch: "SF0"
       func: PLAY_TRACK
       def: "disarm,1,!1x"
    2:
@@ -223,7 +223,7 @@ customFn:
       func: PLAY_TRACK
       def: "acro,1,!1x"
    5:
-      swtch: "SF0"
+      swtch: "SF2"
       func: DISABLE_TOUCH
       def: "1"
 thrTraceSrc: Thr
@@ -231,7 +231,7 @@ switchWarning:
    SC:
       pos: up
    SF:
-      pos: down
+      pos: up
 rssiSource: none
 rfAlarms: 
    warning: 45
