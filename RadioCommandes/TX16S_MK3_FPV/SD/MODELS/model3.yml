@@ -1,14 +1,30 @@
 semver: 2.12.5
 header: 
-   name: "FPV_Freestyle"
-   bitmap: ""
+   name: "FPV_BASE"
+   modelId: 
+      0:
+         val: 1
+   bitmap: "FPVBASE.png"
    labels: ""
+timers: 
+   0:
+      start: 0
+      swtch: "SF0"
+      value: 0
+      mode: THR_START
+      countdownBeep: 0
+      minuteBeep: 0
+      persistent: 0
+      countdownStart: 0
+      showElapsed: 0
+      extraHaptic: 0
+      name: "FLIGHT"
 telemetryProtocol: 0
 thrTrim: 0
 noGlobalFunctions: 0
-displayTrims: 0
+displayTrims: 2
 ignoreSensorIds: 0
-trimInc: 0
+trimInc: 2
 disableThrottleWarning: 0
 displayChecklist: 0
 extendedLimits: 0
@@ -89,6 +105,57 @@ mixData:
    speedUp: 0
    speedDown: 0
    name: ""
+ -
+   destCh: 4
+   srcRaw: "SF"
+   carryTrim: 1
+   mixWarn: 0
+   mltpx: ADD
+   delayPrec: 0
+   speedPrec: 0
+   flightModes: 000000000
+   weight: -100
+   offset: 0
+   swtch: "NONE"
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "ARM"
+ -
+   destCh: 5
+   srcRaw: "SC"
+   carryTrim: 1
+   mixWarn: 0
+   mltpx: ADD
+   delayPrec: 0
+   speedPrec: 0
+   flightModes: 000000000
+   weight: 100
+   offset: 0
+   swtch: "NONE"
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "FLYMOD"
+ -
+   destCh: 6
+   srcRaw: "SH"
+   carryTrim: 1
+   mixWarn: 0
+   mltpx: ADD
+   delayPrec: 0
+   speedPrec: 0
+   flightModes: 000000000
+   weight: 100
+   offset: 0
+   swtch: "NONE"
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "BUZZER"
 expoData: 
  -
    mode: 3
@@ -98,9 +165,6 @@ expoData:
    weight: 100
    offset: 0
    swtch: "NONE"
-   curve: 
-      type: 1
-      value: 0
    chn: 0
    flightModes: 000000000
    name: ""
@@ -112,9 +176,6 @@ expoData:
    weight: 100
    offset: 0
    swtch: "NONE"
-   curve: 
-      type: 1
-      value: 0
    chn: 1
    flightModes: 000000000
    name: ""
@@ -126,9 +187,6 @@ expoData:
    weight: 100
    offset: 0
    swtch: "NONE"
-   curve: 
-      type: 1
-      value: 0
    chn: 2
    flightModes: 000000000
    name: ""
@@ -140,40 +198,40 @@ expoData:
    weight: 100
    offset: 0
    swtch: "NONE"
-   curve: 
-      type: 1
-      value: 0
    chn: 3
    flightModes: 000000000
    name: ""
+customFn: 
+   0:
+      swtch: "SF0"
+      func: PLAY_TRACK
+      def: "armed,1,!1x"
+   1:
+      swtch: "SF2"
+      func: PLAY_TRACK
+      def: "disarm,1,!1x"
+   2:
+      swtch: "SC0"
+      func: PLAY_TRACK
+      def: "angle,1,!1x"
+   3:
+      swtch: "SC1"
+      func: PLAY_TRACK
+      def: "horizn,1,!1x"
+   4:
+      swtch: "SC2"
+      func: PLAY_TRACK
+      def: "acro,1,!1x"
+   5:
+      swtch: "SF0"
+      func: DISABLE_TOUCH
+      def: "1"
 thrTraceSrc: Thr
 switchWarning: 
-   SA:
-      pos: up
-   SB:
-      pos: up
    SC:
       pos: up
-   SD:
-      pos: up
-   SE:
-      pos: up
    SF:
-      pos: up
-   SG:
-      pos: up
-   SW1:
       pos: down
-   SW2:
-      pos: up
-   SW3:
-      pos: up
-   SW4:
-      pos: up
-   SW5:
-      pos: up
-   SW6:
-      pos: up
 rssiSource: none
 rfAlarms: 
    warning: 45
@@ -181,6 +239,20 @@ rfAlarms:
 thrTrimSw: 0
 potsWarnMode: WARN_OFF
 jitterFilter: GLOBAL
+moduleData: 
+   0:
+      type: TYPE_CROSSFIRE
+      antennaMode: MODE_PER_MODEL
+      subType: 0
+      channelsStart: 0
+      channelsCount: 16
+      failsafeMode: NOT_SET
+      mod: 
+         crsf: 
+            telemetryBaudrate: 0
+            crsfArmingMode: 0
+            crsfArmingTrigger: "NONE"
+            spare3: 0
 inputNames: 
    0:
       val: "Ail"
@@ -193,8 +265,25 @@ inputNames:
 potsWarnEnabled: 0
 screenData: 
    0:
-      LayoutId: Layout2P1
+      LayoutId: Layout1P3
       layoutData: 
+         zones: 
+            1:
+               widgetName: "Timer2"
+               widgetData: 
+                  options: 
+                     0:
+                        type: Color
+                        value: 
+                           color: COLIDX29
+                     1:
+                        type: Signed
+                        value: 
+                           signedValue: 1
+                     2:
+                        type: Bool
+                        value: 
+                           boolValue: 0
          options: 
             0:
                type: Bool
@@ -215,12 +304,57 @@ screenData:
             4:
                type: Bool
                value: 
-                  boolValue: 0
+                  boolValue: 1
 topbarData: 
    zones: 
-      4:
-         widgetName: "Internal GPS"
+      3:
+         widgetName: "Value"
          widgetData: 
+            options: 
+               0:
+                  type: Source
+                  value: 
+                     source: TX_GPS
+               1:
+                  type: Color
+                  value: 
+                     color: COLIDX1
+               2:
+                  type: Bool
+                  value: 
+                     boolValue: 0
+               3:
+                  type: Unsigned
+                  value: 
+                     unsignedValue: 0
+               4:
+                  type: Unsigned
+                  value: 
+                     unsignedValue: 0
+      4:
+         widgetName: "Value"
+         widgetData: 
+            options: 
+               0:
+                  type: Source
+                  value: 
+                     source: TX_VOLTAGE
+               1:
+                  type: Color
+                  value: 
+                     color: COLIDX1
+               2:
+                  type: Bool
+                  value: 
+                     boolValue: 0
+               3:
+                  type: Unsigned
+                  value: 
+                     unsignedValue: 0
+               4:
+                  type: Unsigned
+                  value: 
+                     unsignedValue: 0
       5:
          widgetName: "Radio Info"
          widgetData: 
@@ -237,14 +371,6 @@ topbarData:
                   type: Color
                   value: 
                      color: 0x48AC50
-      6:
-         widgetName: "Date Time"
-         widgetData: 
-            options: 
-               0:
-                  type: Color
-                  value: 
-                     color: COLIDX1
 topbarWidgetWidth: 
    0:
       val: 1
@@ -253,12 +379,10 @@ topbarWidgetWidth:
    2:
       val: 1
    3:
-      val: 1
+      val: 2
    4:
       val: 1
    5:
-      val: 1
-   6:
       val: 1
 view: 0
 modelRegistrationID: "957252Q-"
@@ -282,7 +406,7 @@ customSwitches:
    SW2:
       name: ""
       type: 2POS
-      group: 1
+      group: 3
       start: START_OFF
       state: 0
       onColorLuaOverride: OFF
@@ -313,8 +437,8 @@ customSwitches:
          b: 0
    SW4:
       name: ""
-      type: 2POS
-      group: 1
+      type: GLOBAL
+      group: 0
       start: START_OFF
       state: 0
       onColorLuaOverride: OFF

@@ -1,4 +1,4 @@
-checksum: 804
+checksum: 43457
 manuallyEdited: 0
 timezoneMinutes: 0
 ppmunit: 0
@@ -98,7 +98,7 @@ speakerVolume: 7
 vBatMin: 64
 vBatMax: 84
 backlightBright: 27
-globalTimer: 176356
+globalTimer: 181128
 bluetoothBaudrate: 0
 bluetoothMode: OFF
 countryCode: 0
@@ -260,7 +260,7 @@ switchConfig:
    FL2:
       name: ""
       type: NONE
-currModelFilename: "model1.yml"
+currModelFilename: "model3.yml"
 blOffBright: 3
 bluetoothName: ""
 ownerRegistrationID: "957252Q-"
@@ -268,7 +268,7 @@ rotEncMode: 0
 imuMax: 0
 imuOffset: 0
 imuInvert: 0
-selectedTheme: "EdgeTX Default"
+selectedTheme: "FPV Night"
 labelSingleSelect: 0
 labelMultiMode: 0
 favMultiMode: 0

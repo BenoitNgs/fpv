@@ -17,9 +17,11 @@ Models:
     bitmap: ""
     lastopen: 1765466137
   model3.yml:
-    hash: "4e1a00006a5dac12"
-    name: "FPV_Freestyle"
+    hash: "4d2600006a5daca5"
+    name: "FPV_BASE"
+    mod0id: 1
+    mod0type: 5
     labels: ""
-    bitmap: ""
-    lastopen: 1794277136
+    bitmap: "FPVBASE.png"
+    lastopen: 1794339470
 
