@@ -268,7 +268,7 @@ switchWarning:
   SC:
     pos: up
   SF:
-    pos: down
+    pos: up
 thrTrimSw: 0
 potsWarnMode: WARN_OFF
 potsWarnEnabled: 0
