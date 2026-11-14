@@ -1,4 +1,4 @@
-checksum: 52481
+checksum: 24388
 manuallyEdited: 0
 timezoneMinutes: 0
 ppmunit: 0
@@ -73,7 +73,7 @@ trainer:
          studWeight: 100
 view: 0
 fai: 0
-beepMode: mode_alarms
+beepMode: mode_all
 alarmsFlash: 1
 disableMemoryWarning: 0
 disableAlarmWarning: 0
@@ -98,7 +98,7 @@ speakerVolume: 10
 vBatMin: 64
 vBatMax: 84
 backlightBright: 27
-globalTimer: 204748
+globalTimer: 205187
 bluetoothBaudrate: 0
 bluetoothMode: OFF
 countryCode: 0
