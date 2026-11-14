@@ -4,12 +4,12 @@ Labels:
 Sort: 1
 Models:
   model1.yml:
-    hash: "4a5800006a5db412"
+    hash: "4a5800006b5d2a42"
     name: "AERO"
     mod0type: 5
     labels: "Favorites,RADIOMASTER"
     bitmap: ""
-    lastopen: 1794277300
+    lastopen: 1794385041
   model2.yml:
     hash: "bc7100008b5bfd79"
     name: "F3K"
@@ -17,11 +17,11 @@ Models:
     bitmap: ""
     lastopen: 1765466137
   model3.yml:
-    hash: "4d2600006a5daca5"
+    hash: "b52b00006d5d42aa"
     name: "FPV_BASE"
     mod0id: 1
     mod0type: 5
     labels: ""
     bitmap: "FPVBASE.png"
-    lastopen: 1794339470
+    lastopen: 1794385163
 

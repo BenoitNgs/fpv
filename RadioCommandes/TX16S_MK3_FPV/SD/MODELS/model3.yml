@@ -305,6 +305,55 @@ screenData:
                type: Bool
                value: 
                   boolValue: 1
+   1:
+      LayoutId: Layout2x1
+      layoutData: 
+         zones: 
+            0:
+               widgetName: "Outputs"
+               widgetData: 
+                  options: 
+                     0:
+                        type: Signed
+                        value: 
+                           signedValue: 1
+                     1:
+                        type: Bool
+                        value: 
+                           boolValue: 0
+                     2:
+                        type: Color
+                        value: 
+                           color: COLIDX5
+                     3:
+                        type: Color
+                        value: 
+                           color: COLIDX0
+                     4:
+                        type: Color
+                        value: 
+                           color: COLIDX3
+         options: 
+            0:
+               type: Bool
+               value: 
+                  boolValue: 1
+            1:
+               type: Bool
+               value: 
+                  boolValue: 1
+            2:
+               type: Bool
+               value: 
+                  boolValue: 1
+            3:
+               type: Bool
+               value: 
+                  boolValue: 1
+            4:
+               type: Bool
+               value: 
+                  boolValue: 0
 topbarData: 
    zones: 
       3:
